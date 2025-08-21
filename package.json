@@ -2,6 +2,7 @@
 	"name": "ms-helper-library",
 	"version": "1.0.0",
 	"description": "A helper library for microservices that provides utility functions, common patterns, and tools for automatic deployment and configuration management",
+	"node": ">=20.0.0",
 	"main": "dist/index.js",
 	"module": "dist/index.esm.js",
 	"types": "dist/types/index.d.ts",
