@@ -5,8 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    tags:
-      - "v*" # only publish when you push a tag like v1.0.0
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
   build:
@@ -24,6 +25,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: "https://registry.npmjs.org/" # 👈 this is important
+          always-auth: true
+          token: ${{ secrets.NPM_TOKEN }} # ✅ inject token here
           cache: "npm"
       - run: npm i
       - run: npm run build --if-present
