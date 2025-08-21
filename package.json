@@ -1,0 +1,22 @@
+{
+	"name": "ms-helper-library",
+	"version": "1.0.0",
+	"description": "A helper library for microservices that provides utility functions, common patterns, and tools for automatic deployment and configuration management",
+	"main": "dist/index.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/types/index.d.ts",
+	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"prepare": "npm run build"
+	},
+	"keywords": [
+		"helper",
+		"library"
+	],
+	"author": "Ferdous Sohag",
+	"license": "MIT",
+	"devDependencies": {
+		"tsup": "^8.5.0",
+		"typescript": "^5.9.2"
+	}
+}
