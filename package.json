@@ -1,6 +1,6 @@
 {
 	"name": "ms-helper-library",
-	"version": "1.0.0",
+	"version": "1.0.5",
 	"description": "A helper library for microservices that provides utility functions, common patterns, and tools for automatic deployment and configuration management",
 	"node": ">=20.0.0",
 	"main": "dist/index.js",
